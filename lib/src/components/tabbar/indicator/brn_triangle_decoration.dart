@@ -110,18 +110,22 @@ class BrnTriangleIndicator extends Decoration {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     if (identical(this, other)) return true;
     if (runtimeType != other.runtimeType) return false;
-    final BrnTriangleIndicator typedOther = other;
-    return color == typedOther.color &&
-        lineWidth == typedOther.lineWidth &&
-        triWidth == typedOther.triWidth &&
-        triHeight == typedOther.triHeight &&
-        gradient == typedOther.gradient &&
-        image == typedOther.image &&
-        shadows == typedOther.shadows &&
-        shape == typedOther.shape;
+    if(other is BrnTriangleIndicator){
+      final BrnTriangleIndicator typedOther = other;
+      return color == typedOther.color &&
+          lineWidth == typedOther.lineWidth &&
+          triWidth == typedOther.triWidth &&
+          triHeight == typedOther.triHeight &&
+          gradient == typedOther.gradient &&
+          image == typedOther.image &&
+          shadows == typedOther.shadows &&
+          shape == typedOther.shape;
+    }else{
+      return false;
+    }
   }
 
   @override

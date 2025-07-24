@@ -41,10 +41,10 @@ class BrnIconButton extends StatefulWidget {
   ///  文字样式
   final TextStyle? style;
 
-  /// 图文组合的宽度，默认 80
+  /// 图文组合的宽度，默认 90
   final double widgetWidth;
 
-  /// 图文组合的高度，默认 80
+  /// 图文组合的高度，默认 90
   final double widgetHeight;
 
   /// 文字和图片的间距，默认 4
@@ -61,8 +61,8 @@ class BrnIconButton extends StatefulWidget {
     this.onTap,
     this.iconWidth = 24,
     this.iconHeight = 24,
-    this.widgetWidth = 80,
-    this.widgetHeight = 80,
+    this.widgetWidth = 90,
+    this.widgetHeight = 90,
     this.direction = Direction.top,
     this.padding = 4,
     this.style,
@@ -111,7 +111,7 @@ class _BrnIconButtonState extends State<BrnIconButton> {
               )
             ],
           ));
-    } else if (widget.direction == Direction.left) {
+    } else if (widget.direction == Direction.right) {
       ctn = Container(
           height: widget.widgetHeight,
           width: widget.widgetWidth,
@@ -140,7 +140,7 @@ class _BrnIconButtonState extends State<BrnIconButton> {
               )
             ],
           ));
-    } else if (widget.direction == Direction.right) {
+    } else if (widget.direction == Direction.left) {
       ctn = Container(
           height: widget.widgetHeight,
           width: widget.widgetWidth,
