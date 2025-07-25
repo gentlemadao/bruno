@@ -35,7 +35,6 @@ import 'package:flutter/material.dart';
 ///  * [BrnPairInfoTable], 单列key-value信息集合组件
 ///
 class BrnRichInfoGrid extends StatelessWidget {
-
   /// 待展示的文本信息
   final List<BrnRichGridInfo>? pairInfoList;
 
@@ -97,7 +96,7 @@ class BrnRichInfoGrid extends StatelessWidget {
           gridWidth = MediaQuery.of(context).size.width;
         }
         double itemHeight =
-            defaultConfig.itemHeight * (MediaQuery.textScaleFactorOf(context));
+            MediaQuery.textScalerOf(context).scale(defaultConfig.itemHeight);
         double itemWidth = (gridWidth - defaultConfig.itemSpacing) / 2;
 
         var gridView = GridView.builder(
@@ -180,7 +179,6 @@ class BrnRichInfoGrid extends StatelessWidget {
 
 /// 用于构建文本信息
 class BrnRichGridInfo {
-
   ///
   final dynamic keyPart;
   final dynamic valuePart;

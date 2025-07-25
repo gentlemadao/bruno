@@ -185,7 +185,7 @@ class BrnCommonCardTitle extends StatelessWidget {
       subWidget = _subTitleWidgetFromWidget();
     }
     var titleWidget = RichText(
-      textScaleFactor: MediaQuery.of(context).textScaleFactor,
+      textScaler: MediaQuery.of(context).textScaler,
       maxLines: this.titleMaxLines,
       overflow: this.titleOverflow,
       text: TextSpan(

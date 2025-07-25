@@ -1,5 +1,3 @@
-
-
 import 'package:bruno/bruno.dart';
 import 'package:flutter/material.dart';
 
@@ -34,14 +32,13 @@ class SelectedListActionSheetCustomExamplePageState
   @override
   Widget build(BuildContext context) {
     /// 要拦截 Android 的系统返回行为，请务必自行添加以下 WillPopScope 逻辑
-    return WillPopScope(
-      onWillPop: () async {
-        if (!controller.isHidden) {
+    return PopScope(
+      onPopInvoked: (pop) {
+        if (!pop) {
           controller.dismiss();
-          return false;
         }
-        return true;
       },
+      canPop: controller.isHidden,
       child: Scaffold(
           appBar: BrnAppBar(
             title: '已选菜单列表',
