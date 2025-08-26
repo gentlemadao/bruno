@@ -57,6 +57,7 @@ export 'src/components/picker/multi_select_bottom_picker/brn_multi_select_list_p
 export 'src/components/picker/brn_select_tags_with_input_picker.dart';
 export 'src/components/picker/brn_bottom_picker.dart';
 export 'src/components/picker/time_picker/date_picker/brn_date_picker.dart';
+export 'src/components/picker/time_picker/date_picker/brn_datetime_widget.dart';
 export 'src/components/picker/time_picker/date_range_picker/brn_date_range_picker.dart';
 export 'src/components/picker/base/brn_picker_title_config.dart';
 export 'src/components/picker/brn_multi_picker.dart';
