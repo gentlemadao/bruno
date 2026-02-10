@@ -147,7 +147,7 @@ class _ForceGuideExampleState extends State<ForceGuideExample> {
           },
         ),
       ),
-      onPopInvoked: (pop) {
+      onPopInvokedWithResult: (pop, result) {
         intro.dispose();
       },
     );

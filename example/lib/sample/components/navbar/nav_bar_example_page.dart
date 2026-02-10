@@ -328,7 +328,7 @@ class _NavBarPageState extends State<NavBarPage> with TickerProviderStateMixin {
               padding: EdgeInsets.only(left: 3, right: 3),
               margin: EdgeInsets.only(left: 6),
               decoration:
-                  BoxDecoration(color: Color(0xff8E8E8E).withOpacity(0.15)),
+                  BoxDecoration(color: Color(0xff8E8E8E).withValues(alpha: 0.15)),
               child: Center(
                 child: Text(
                   '住宅',

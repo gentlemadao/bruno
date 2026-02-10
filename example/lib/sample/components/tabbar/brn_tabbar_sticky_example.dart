@@ -83,7 +83,7 @@ class _BrnTabbarStickyExampleState extends State<BrnTabbarStickyExample>
           ),
         ),
       ),
-      onPopInvoked: (pop) {
+      onPopInvokedWithResult: (pop, result) {
         if (!pop) {
           closeWindowController!.closeMoreWindow();
         }

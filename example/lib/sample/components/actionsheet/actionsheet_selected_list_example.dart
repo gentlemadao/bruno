@@ -34,7 +34,7 @@ class SelectedListActionSheetExamplePageState
   Widget build(BuildContext context) {
     /// 要拦截 Android 的系统返回行为，请务必自行添加以下 WillPopScope 逻辑
     return PopScope(
-      onPopInvoked: (pop) {
+      onPopInvokedWithResult: (pop, result) {
         if (!pop) {
           controller.dismiss();
         }

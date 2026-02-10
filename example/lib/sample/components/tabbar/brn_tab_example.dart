@@ -70,7 +70,7 @@ class _BrnTabExampleState extends State<BrnTabExample>
           ),
         ),
       ),
-      onPopInvoked: (pop) {
+      onPopInvokedWithResult: (pop, result) {
         if (!pop) {
           closeWindowController!.closeMoreWindow();
         }

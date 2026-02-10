@@ -116,7 +116,8 @@ class BrnBottomPickerWidgetState extends State<BrnBottomPickerWidget>
   @override
   Widget build(BuildContext context) {
     return PopScope(
-      onPopInvoked: (pop) async {
+      onPopInvokedWithResult: (didPop, result) async {
+        if (didPop) return;
         _controller.reverse();
       },
       child: Scaffold(

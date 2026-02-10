@@ -147,7 +147,7 @@ class _SoftGuideExampleState extends State<SoftGuideExample> {
           },
         ),
       ),
-      onPopInvoked: (pop) {
+      onPopInvokedWithResult: (pop, result) {
         intro.dispose();
       },
     );

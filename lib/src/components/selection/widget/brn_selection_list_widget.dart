@@ -232,7 +232,7 @@ class _BrnSelectionGroupViewState extends State<BrnListSelectionGroupWidget> {
                       begin: FractionalOffset.topCenter,
                       end: FractionalOffset.bottomCenter,
                       colors: [
-                        Colors.white.withOpacity(0),
+                        Colors.white.withValues(alpha: 0),
                         Colors.white,
                       ],
                       stops: [0, 1.0],
