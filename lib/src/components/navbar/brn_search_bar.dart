@@ -349,13 +349,11 @@ class __SearchInputWidgetState extends State<_SearchInputWidget> {
                     padding: EdgeInsets.only(
                         right: valueNotifier.value ? 24 : 20,
                         left: valueNotifier.value ? 24 : 20),
-                    child: Image.asset(
-                      'assets/${BrnAsset.iconDeleteText}',
+                    child: BrunoTools.getAssetSizeImage(
+                      BrnAsset.iconDeleteText,
+                      16,
+                      16,
                       color: _defaultClearIconColor,
-                      scale: 3.0,
-                      height: 16,
-                      package: BrnStrings.flutterPackageName,
-                      width: 16,
                     ),
                   ),
                 ),

@@ -38,6 +38,7 @@ class _MyAppState extends State<MyApp> {
         title: 'Flutter Example',
         theme: ThemeData(
           primarySwatch: Colors.blue,
+          useMaterial3: false,
         ),
         home: HomePage(),
       ),
